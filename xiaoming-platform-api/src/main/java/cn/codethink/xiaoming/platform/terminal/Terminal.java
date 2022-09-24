@@ -1,5 +1,7 @@
 package cn.codethink.xiaoming.platform.terminal;
 
+import cn.codethink.xiaoming.platform.command.sender.CommandSender;
+
 /**
  * <h1>终端</h1>
  *
@@ -9,4 +11,18 @@ package cn.codethink.xiaoming.platform.terminal;
  * @author Chuanwise
  */
 public interface Terminal {
+    
+    /**
+     * 获取终端名
+     *
+     * @return 终端名
+     */
+    String getName();
+    
+    /**
+     * 获取指令发送方
+     *
+     * @return 指令发送方
+     */
+    CommandSender getCommandSender();
 }

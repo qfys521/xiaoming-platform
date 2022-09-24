@@ -20,11 +20,11 @@ public interface Registration<T> {
     /**
      * 修改注册值
      *
-     * @param t 注册值
+     * @param value 注册值
      * @return 修改前的注册值
-     * @throws NullPointerException t 为 null
+     * @throws NullPointerException value 为 null
      */
-    T setValue(T t);
+    T setValue(T value);
     
     /**
      * 获取注册主体
