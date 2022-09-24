@@ -1,5 +1,7 @@
 package cn.codethink.xiaoming.platform.command.sender;
 
+import cn.codethink.xiaoming.platform.command.PlatformObject;
+
 /**
  * <h1>指令发送方</h1>
  *
@@ -7,5 +9,6 @@ package cn.codethink.xiaoming.platform.command.sender;
  *
  * @author Chuanwise
  */
-public interface CommandSender {
+public interface CommandSender
+    extends PlatformObject {
 }
