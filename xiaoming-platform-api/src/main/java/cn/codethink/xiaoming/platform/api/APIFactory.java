@@ -1,5 +1,6 @@
 package cn.codethink.xiaoming.platform.api;
 
+import cn.codethink.common.util.Exceptions;
 import cn.codethink.common.util.Preconditions;
 import cn.codethink.xiaoming.platform.annotations.PlatformInternalAPI;
 
@@ -17,7 +18,7 @@ import java.util.ServiceLoader;
 @PlatformInternalAPI
 public final class APIFactory {
     private APIFactory() {
-        throw new UnsupportedOperationException("can not construct an instance of " + APIFactory.class.getName());
+        Exceptions.throwUtilClassInitializeException(APIFactory.class);
     }
     
     private static volatile API instance;
