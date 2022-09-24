@@ -6,11 +6,13 @@ plugins {
 apply from: '../mirrors.gradle'
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
     api project(':xiaoming-platform-api')
+    api 'cn.codethink:codethink-common:1.0-SNAPSHOT'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
