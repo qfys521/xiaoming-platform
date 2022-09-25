@@ -11,6 +11,4 @@ import cn.codethink.xiaoming.platform.command.PlatformObject;
  */
 public interface ServiceManager
     extends PlatformObject {
-    
-    
 }
