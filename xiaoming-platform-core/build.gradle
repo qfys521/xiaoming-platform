@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'java-library'
+    id 'com.github.johnrengelman.shadow' version '4.0.3'
 }
 
 apply from: '../mirrors.gradle'
@@ -16,6 +17,7 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.fusesource.jansi/jansi
     implementation 'org.fusesource.jansi:jansi:2.4.0'
+    testImplementation 'org.fusesource.jansi:jansi:2.4.0'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
