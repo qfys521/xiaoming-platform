@@ -1,6 +1,7 @@
 package cn.codethink.xiaoming.platform.terminal;
 
 import cn.codethink.xiaoming.platform.command.sender.CommandSender;
+import cn.codethink.xiaoming.platform.logger.Logger;
 
 /**
  * <h1>终端</h1>
@@ -25,4 +26,11 @@ public interface Terminal {
      * @return 指令发送方
      */
     CommandSender getCommandSender();
+    
+    /**
+     * 获取日志记录器
+     *
+     * @return 日志记录器
+     */
+    Logger getLogger();
 }
