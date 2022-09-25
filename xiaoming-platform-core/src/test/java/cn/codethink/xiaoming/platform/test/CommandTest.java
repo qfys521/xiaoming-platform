@@ -17,6 +17,7 @@ public class CommandTest {
                            @Parameter Plugin plugin) {
             // disable plugin
             final Platform platform = sender.getPlatform();
+            
         }
     }
 }
