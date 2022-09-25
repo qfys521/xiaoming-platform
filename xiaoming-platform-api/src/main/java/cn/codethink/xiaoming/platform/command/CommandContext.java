@@ -3,10 +3,10 @@ package cn.codethink.xiaoming.platform.command;
 import cn.codethink.xiaoming.platform.annotations.PlatformTemporaryAPI;
 import cn.codethink.xiaoming.platform.command.sender.CommandSender;
 
+import java.lang.annotation.Inherited;
+
 /**
  * <h1>指令上下文</h1>
- *
- * <p>用于</p>
  *
  * @author Chuanwise
  */
