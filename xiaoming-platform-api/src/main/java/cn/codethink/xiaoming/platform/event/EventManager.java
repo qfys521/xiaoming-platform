@@ -1,6 +1,7 @@
 package cn.codethink.xiaoming.platform.event;
 
 import cn.codethink.xiaoming.platform.command.PlatformObject;
+import cn.codethink.xiaoming.platform.common.Subject;
 
 /**
  * <h1>事件管理器</h1>
@@ -15,8 +16,11 @@ public interface EventManager
     /**
      * 广播事件
      *
-     * @param event 事件
+     * @param event   事件
+     * @param subject 事件广播主体
      * @return 事件是否被监听
+     * @throws NullPointerException event 为 null
+     * @throws NullPointerException subject 为 null
      */
-    boolean broadcastEvent(Event event);
+    boolean broadcastEvent(Event event, Subject subject);
 }
