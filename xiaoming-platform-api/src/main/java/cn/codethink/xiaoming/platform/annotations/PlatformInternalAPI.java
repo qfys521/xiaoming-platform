@@ -1,9 +1,6 @@
 package cn.codethink.xiaoming.platform.annotations;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * <h1>平台内部 API</h1>
@@ -19,6 +16,7 @@ import java.lang.annotation.Target;
  *
  * @author Chuanwise
  */
+@Documented
 @Target({ ElementType.TYPE, ElementType.METHOD })
 @Retention(RetentionPolicy.SOURCE)
 public @interface PlatformInternalAPI {
