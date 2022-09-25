@@ -3,6 +3,7 @@ package cn.codethink.xiaoming.platform;
 import cn.codethink.xiaoming.platform.command.CommandManager;
 import cn.codethink.xiaoming.platform.event.EventManager;
 import cn.codethink.xiaoming.platform.plugin.PluginManager;
+import cn.codethink.xiaoming.platform.schedule.ScheduleManager;
 import cn.codethink.xiaoming.platform.service.ServiceManager;
 import cn.codethink.xiaoming.platform.terminal.TerminalManager;
 
@@ -49,4 +50,11 @@ public interface Platform {
      * @return 指令管理器
      */
     CommandManager getCommandManager();
+    
+    /**
+     * 获取调度管理器
+     *
+     * @return 调度管理器
+     */
+    ScheduleManager getScheduleManager();
 }
