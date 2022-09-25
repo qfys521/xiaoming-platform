@@ -1,6 +1,7 @@
 package cn.codethink.xiaoming.platform.command.sender;
 
 import cn.codethink.xiaoming.platform.command.PlatformObject;
+import cn.codethink.xiaoming.platform.permission.Grantee;
 
 /**
  * <h1>指令发送方</h1>
@@ -10,5 +11,5 @@ import cn.codethink.xiaoming.platform.command.PlatformObject;
  * @author Chuanwise
  */
 public interface CommandSender
-    extends PlatformObject {
+    extends PlatformObject, Grantee {
 }
